@@ -27,6 +27,7 @@ from ..collectors.base import HardwareSnapshot
 from ..config import AppConfig
 from .chart_view import ChartView
 from .sensor_card import SensorCard
+from .system_info_view import SystemInfoView
 from .tray import TrayIcon
 
 
@@ -94,6 +95,9 @@ class MainWindow(QMainWindow):
 
         self._fan_list = QListWidget()
         right_panel.addTab(self._fan_list, "Fans")
+
+        self._system_view = SystemInfoView()
+        right_panel.addTab(self._system_view, "System")
 
         # --- splitter ---
         splitter = QSplitter(Qt.Horizontal)

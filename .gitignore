@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Local data (DB + logs are user-specific, not source)
+data/
+*.db
+*.db-shm
+*.db-wal
+thermal-monitor.log
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# One-off files generated during development
+out.log
+err.log
+stdout.log
+stderr.log
+start_minimal.bat
+run_wrapper.bat

@@ -1,0 +1,20 @@
+# PC 温度监控 — 依赖
+# Python 3.10+ (已在 3.12.9 验证)
+
+# UI
+PySide6>=6.6.0
+
+# 实时曲线
+pyqtgraph>=0.13.3
+numpy>=1.24.0
+
+# 硬件信息
+psutil>=5.9.0
+
+# Windows WMI (CPU/主板/硬盘温度 + 风扇)
+# pywin32 是 wmi 的依赖
+pywin32>=306; sys_platform == "win32"
+wmi>=1.5.1; sys_platform == "win32"
+
+# 跨平台通知（备用，Win 上 PySide6 自带足够）
+plyer>=2.1.0
